@@ -1,0 +1,1006 @@
+/*
+Couples Resort Mobile Version for:
+
+1. Room Style
+2. Room Master
+3. Spa / Activities
+4. Packages
+
+ */
+
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Home Cover Image
+    4.  Home Cover Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer 
+ */
+
+/* 1. ---General CSS--- */
+
+#mobile-outline {
+  outline: 20px solid #333;
+  max-width: 412px;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #333;
+  color: #626262;
+  font-family: "Sanchez", "Times New Roman", serif;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cr-red {
+  color: #9a2018;
+}
+
+.container {
+  width: 420px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: solid 5px #433d3d;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(235, 235, 235, 0.5);
+  overflow: hidden;
+}
+/* 2. --- Main Nav CSS--- */
+
+#main-nav label img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+
+#main-nav input,
+#burger-con {
+  display: none;
+}
+
+#main-nav input:checked ~ #burger-con {
+  display: block;
+}
+
+#main-nav input:checked ~ label img {
+  transform: rotate(90deg);
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: #626262;
+}
+
+#main-nav ul li {
+  border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:first-child {
+  border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+  margin-bottom: 10px;
+}
+#main-nav ul li a:hover {
+  background-color: #9a2018;
+  color: #fff;
+}
+#main-nav ul li a:active {
+  background-color: #9a2018;
+  color: #fff;
+}
+#logo {
+  margin-bottom: 20px;
+  max-width: 382px;
+}
+
+/* 3. --- Home Cover Image CSS --- */
+
+#hero {
+  background: url(../images/hp-mobl-hero.jpg) no-repeat;
+  height: 200px;
+}
+
+.book-now {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 500ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  transition: all 0.9s ease;
+  cursor: pointer;
+  grid-column: 3/-1;
+  grid-row: 1/2;
+  height: 67px;
+}
+
+.book-now:hover {
+  box-shadow: inset 0px -120px 0px 0px rgb(238, 11, 11);
+}
+
+#book-now-hero {
+  height: 67px;
+}
+
+.hero-img-h2,
+.hero-img-h3 {
+  background: rgb(255, 255, 255);
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.hero-img-h2 span,
+.hero-img-h3 span {
+  color: #9a2018;
+  font-size: 12px;
+}
+
+.line-separator {
+  margin-top: 20px;
+  border-top: solid 3px #cf6666;
+  padding-top: 20px;
+}
+
+#hero-summary p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+/* 4. --- Home Cover Image Contact CSS--- */
+
+.fas {
+  font-size: 42px;
+  color: #9a2018;
+  margin: 0 auto;
+  float: left;
+}
+
+.fa-mobile-alt {
+  margin-right: 10px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+}
+
+.fa-map-marker-alt {
+  margin-right: 10px;
+}
+
+#contact {
+  font-size: 11px;
+  background-color: #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* 5. --- Why Choose Us  CSS--- */
+
+#why-choose-us-nav {
+  padding-top: 20px;
+}
+
+#why-choose-us-nav ul li {
+  margin-bottom: 15px;
+}
+
+#why-choose-us-nav ul li a {
+  color: inherit;
+  padding: 5px;
+}
+
+#why-choose-us-nav ul li a.selected {
+  border-left: #9a2018 solid 5px;
+}
+#why-choose-us-nav ul li a:hover {
+  background-color: #9a2018;
+  color: #fff;
+}
+
+#why-choose-us-hero-con {
+  background: url(../images/hp-mobl-sec-01.jpg) no-repeat;
+  height: 195px;
+}
+
+.why-choose-us-image {
+  float: left;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.why-choose-us-image-con h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.why-choose-us-image-con p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.why-choose-us-image-con a {
+  color: #707070;
+  font-size: 12px;
+}
+
+#why-choose-us-bottom-nav {
+  background-color: #cf6666;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#why-choose-us-bottom-nav ol {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#why-choose-us-bottom-nav ol li {
+  display: inline;
+}
+
+#why-choose-us-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+}
+
+/* 6. --- About & FAQ CSS --- */
+
+#about-hero-con {
+  background: url(../images/hp-mobl-sec-03.jpg) no-repeat;
+  height: 195px;
+}
+
+#about-us-text {
+  padding-bottom: 60px;
+}
+
+#about-us-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+#about-us-text-column2 {
+  font-style: italic;
+}
+
+#faq-con {
+  background-color: #f4f4f4;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+#faq-con h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#faq-con h2 span {
+  color: #9a2018;
+  font-size: 16px;
+}
+
+.faq-items {
+  margin-bottom: 16px;
+}
+
+.faq-items h3 {
+  background: #e8e7e7;
+  padding: 16px;
+  font-size: 16px;
+}
+summary {
+  background: #e8e7e7;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+summary:hover {
+  background-color: #9a2018;
+  color: #fff;
+}
+.faq-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid #9a2018;
+}
+
+.faq-items a {
+  color: inherit;
+  font-size: 13px;
+}
+.faq-items h3:hover {
+  background-color: #9a2018;
+  color: #fff;
+}
+#faq-text-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 7. --- Contact Cover Image CSS --- */
+
+#contact-hero-con {
+  background: url(../images/hp-mobl-sec-04.jpg);
+  height: 195px;
+}
+
+#contact-hero-text {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#contact-hero-address p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#contact-hero-address {
+  margin-bottom: 30px;
+}
+
+#contact-hero-address h3 {
+  margin-bottom: 25px;
+}
+
+#contact-hero-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-hero-form input,
+textarea {
+  padding: 22px;
+  border: 2px solid #d6d6d6;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font: inherit;
+  width: auto;
+}
+
+#contact-hero-form textarea {
+  height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+  padding: 12px 28px;
+  background: #9a2018;
+  color: #fff;
+  border: none;
+  transition: all 200ms ease-in;
+  width: 150px;
+  align-self: flex-end;
+}
+
+#contact-hero-form input[type="submit"]:hover {
+  background-color: #ac1005;
+}
+
+/* 8. --- Footer CSS --- */
+
+#footer-hero {
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+#footer-hero h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+  margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+  font-size: 23px;
+}
+
+#footer-contact-info p {
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 11px;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+/* This CSS is for the 3 Pages */
+
+p {
+  font-size: 14px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  font-family: "Font Awesome 5 Free";
+}
+
+.grid-full {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  column-gap: 30px;
+  max-width: 412px;
+  margin: 0 auto;
+}
+
+.title-section {
+  align-self: end;
+}
+
+.banner-section {
+  height: 195px;
+}
+
+.section-dining h3,
+.dropdown-content-list h4,
+.dropdown-content-list h5 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* Contact Form CSS  */
+
+#contact-hero-form input,
+#contact-hero-form textarea {
+  position: relative;
+}
+
+#contact-hero-form input:not(:placeholder-shown),
+#contact-hero-form textarea:not(:placeholder-shown) {
+  border-color: #45d945;
+}
+
+#contact-hero-form input:placeholder-shown,
+#contact-hero-form textarea:placeholder-shown {
+  border-color: #e53d32;
+}
+
+/* Lightbox CSS for Homepage and Rooms Style */
+
+.lightbox {
+  position: absolute;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
+  margin-top: 5px;
+  width: 412px;
+  top: 0;
+  background-color: #effbed;
+  padding: 20px;
+  color: #042700;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.lightbox_close {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  color: #46c152;
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 0.5s ease-in-out;
+}
+
+.lightbox_close:hover {
+  color: #ab0e02;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+/* Rooms Style CSS */
+
+.section-rooms {
+  margin-bottom: 30px;
+}
+
+#hero-rooms {
+  background: url(../images/hp-mobl-heroRooms.jpg) no-repeat;
+  height: 200px;
+}
+
+#room-chateaus-con .banner-section {
+  background: url(../images/hp-mobl-heroRooms-m.jpg) no-repeat;
+}
+
+#room-villas-con .banner-section {
+  background: url(../images/hp-mobl-sec-03.rooms.jpg) no-repeat;
+}
+
+#room-masters-con .banner-section {
+  background: url(../images/hp-mobl-heroRooms.jpg) no-repeat;
+}
+
+#room-chalet-con .banner-section {
+  background: url(../images/hp-mobl-sec-01.1-rooms.jpg) no-repeat;
+}
+
+#room-exotics-con .banner-section {
+  background: url(../images/hp-mobl-heroRooms-mm.jpg) no-repeat;
+}
+
+#room-juniors-con .banner-section {
+  background: url(../images/hp-mobl-sec-04.4-rooms.jpg) no-repeat;
+}
+
+#main-info-rooms {
+  padding: 30px 15px 50px;
+  background-color: #ededed;
+  line-height: 24px;
+}
+
+#main-info-rooms h3,
+#rooms-intern-summary h3 {
+  font-size: 14px;
+}
+
+#main-info-rooms li,
+#rooms-intern-summary li {
+  border-bottom: 1px solid #9a2018;
+  padding: 5px 0 0px;
+  font-size: 12px;
+}
+
+.rooms-list-items {
+  margin-bottom: 15px;
+}
+
+.rooms-list-items li {
+  position: relative;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.rooms-list-items li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #c54242;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.rooms-list-items + a {
+  background-color: #c54242;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+
+.rooms-list-items + a:hover {
+  background-color: #e21405;
+}
+
+/* ROOMS PAGE CSS */
+
+#hero-intern-rooms {
+  background: url(../images/hp-mobl-heroRooms.jpg) no-repeat;
+  height: 200px;
+}
+#rooms-intern-summary ul {
+  margin-top: 10px;
+}
+
+.btn-active:after {
+  content: "More Details & Photos";
+}
+.btn-active:hover::after {
+  content: "Coming Soon!";
+}
+.btn-active:active::after {
+  content: "Coming Soon!";
+}
+
+/* Spa/Activities PAGE CSS */
+
+#hero-spa {
+  background: url(../images/hp-mobl-hero-spa-mm.jpg) no-repeat;
+  height: 200px;
+}
+#spa-registered-massage .banner-section {
+  background: url(../images/hp-mobl-hero-spa.jpg) no-repeat;
+}
+#spa-hotstones .banner-section {
+  background: url(../images/hp-mobl-sec-01-spa1.jpg) no-repeat;
+}
+#spa-handfoot .banner-section {
+  background: url(../images/hp-mobl-sec-01.1-spa.jpg) no-repeat;
+}
+#spa-scrubsWraps .banner-section {
+  background: url(../images/hp-mobl-sec-03.spa.jpg) no-repeat;
+}
+.spa-btn {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn:hover {
+  background-color: #e21405;
+}
+.spa-btn:after {
+  content: "Registered Massage Therapy";
+}
+.spa-btn:hover::after {
+  content: "Click for more details!";
+}
+.spa-btn-hotstone {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn-hotstone:hover {
+  background-color: #e21405;
+}
+.spa-btn-hotstone:after {
+  content: "Hot Stones, Body Molding, Indian Head Massage";
+}
+.spa-btn-hotstone:hover::after {
+  content: "Click for more details!";
+}
+.spa-btn-handfoot {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn-handfoot:hover {
+  background-color: #e21405;
+}
+.spa-btn-handfoot:after {
+  content: "Hand/Foot Treatments";
+}
+.spa-btn-handfoot:hover::after {
+  content: "Click for more details!";
+}
+.spa-btn-scrubs {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn-scrubs:hover {
+  background-color: #e21405;
+}
+.spa-btn-scrubs:after {
+  content: "Scrubs, Wraps and Facials";
+}
+.spa-btn-scrubs:hover::after {
+  content: "Click for more details!";
+}
+#main-info-rooms-spa {
+  padding: 30px 15px 50px;
+  background-color: #faf8f8;
+  line-height: 24px;
+}
+.spa-dropdwon {
+  font-size: 14px;
+}
+.spa-text-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.spa-price {
+  color: #c54242;
+}
+.spa-items {
+  margin-bottom: 16px;
+}
+.spa-items h3 {
+  background: #e8e7e7;
+  padding: 16px;
+  font-size: 14px;
+}
+.spa-items h3:hover {
+  background-color: #9a2018;
+  color: #fff;
+}
+.spa-waxing-image {
+  overflow: hidden;
+}
+#waxing-bottom-nav {
+  text-align: center;
+  background-color: #cf6666;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#waxing-bottom-nav:hover {
+  background-color: #9a2018;
+}
+#waxing-bottom-nav ol {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#waxing-bottom-nav ol li {
+  display: inline;
+}
+
+#waxing-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+}
+.waxing-btn:after {
+  font-family: inherit;
+  content: "CLICK TO LEARN MORE...";
+}
+.waxing-btn:active::after {
+  content: "COMING SOON!";
+  color: #9a2018;
+}
+
+/* Packages PAGE CSS */
+
+#hero-packages {
+  background: url(../images/hp-mobl-hero-package.jpg) no-repeat;
+  height: 200px;
+}
+.pac-items {
+  margin-bottom: 16px;
+}
+.package-items {
+  margin-bottom: 16px;
+}
+.package-items h3 {
+  background: #9a2018;
+  color: #fff;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.package-waxing-image {
+  padding-right: 100px;
+  align-items: center;
+  overflow: hidden;
+}
+#rental-rate-bottom-nav {
+  text-align: center;
+  background-color: #cf6666;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#rental-rate-bottom-nav:hover {
+  background-color: #9a2018;
+}
+#rental-rate-bottom-nav ol {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#rental-rate-bottom-nav ol li {
+  display: inline;
+}
+
+#rental-rate-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+}
+.pac-btn:after {
+  font-family: inherit;
+  content: "CLICK TO LEARN MORE...";
+}
+.pac-btn:active::after {
+  content: "COMING SOON!";
+  color: #9a2018;
+}
+
+/* Animated Send button for Masters Room/Spa/Packages */
+
+.container-btn {
+  align-items: center;
+  background: #9a2018;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+}
+.container-btn:hover {
+  background-color: #ac1005;
+}
+.text {
+  color: white;
+  position: absolute;
+  transition: opacity 300ms;
+  user-select: none;
+  -moz-user-select: none;
+}
+.fingerprint {
+  height: 70px;
+  left: -8px;
+  opacity: 0;
+  position: absolute;
+  stroke: #777;
+  top: -12px;
+  transition: opacity 1ms;
+}
+.fingerprint-active {
+  stroke: #fff;
+}
+.fingerprint-out {
+  opacity: 1;
+}
+.odd {
+  stroke-dasharray: 0px 50px;
+  stroke-dashoffset: 1px;
+  transition: stroke-dasharray 1ms;
+}
+.even {
+  stroke-dasharray: 50px 50px;
+  stroke-dashoffset: -41px;
+  transition: stroke-dashoffset 1ms;
+}
+.ok {
+  opacity: 0;
+}
+.active.container-btn {
+  animation: 6s Container;
+}
+.active .text {
+  opacity: 0;
+  animation: 6s Text forwards;
+}
+.active .fingerprint {
+  opacity: 1;
+  transition: opacity 300ms 200ms;
+}
+.active .fingerprint-base .odd {
+  stroke-dasharray: 50px 50px;
+  transition: stroke-dasharray 800ms 100ms;
+}
+.active .fingerprint-base .even {
+  stroke-dashoffset: 0px;
+  transition: stroke-dashoffset 800ms;
+}
+.active .fingerprint-active .odd {
+  stroke-dasharray: 50px 50px;
+  transition: stroke-dasharray 2000ms 1500ms;
+}
+.active .fingerprint-active .even {
+  stroke-dashoffset: 0px;
+  transition: stroke-dashoffset 2000ms 1300ms;
+}
+.active .fingerprint-out {
+  opacity: 0;
+  transition: opacity 300ms 4100ms;
+}
+.active .ok {
+  opacity: 1;
+  animation: 6s Ok forwards;
+}
+@keyframes Container {
+  0% {
+    width: 150px;
+  }
+  6% {
+    width: 80px;
+  }
+  71% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  77% {
+    transform: scale(1);
+  }
+
+  94% {
+    width: 80px;
+    background-color: green;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@keyframes Text {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  6% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  94% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes Ok {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  77% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  92% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  96% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+  }
+}
