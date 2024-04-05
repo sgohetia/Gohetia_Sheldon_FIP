@@ -293,7 +293,12 @@
           </p>
         </div>
         <div id="contact-hero-form" class="col-span-full">
-          <div class="form">
+          <form
+            class="form"
+            action="#submit-form"
+            method="post"
+            enctype="text/plain"
+          >
             <input
               name="fullName"
               type="text"
@@ -309,16 +314,16 @@
             <textarea
               name="msg"
               required
-              placeholder="Enter your questions, comments or concerns here..."
+              placeholder="Fill all required field to see the lightbox effects, thank you..."
             ></textarea>
-            <a href="#submit-form"
-              ><input
-                name="submit"
-                type="submit"
-                value="Send"
-                class="container-btn"
-            /></a>
-          </div>
+            <input
+              name="submit"
+              type="submit"
+              value="Send"
+              class="container-btn"
+              required
+            />
+          </form>
         </div>
       </section>
       <footer id="footer-hero" class="grid-con">
