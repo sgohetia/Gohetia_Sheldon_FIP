@@ -36,7 +36,7 @@ Masters Room Page
 1. BookNow Button hover style.
 2. Exclusive to Masters - Dropdown hover style and dropdown content for Amenities In-rooms.
 3. Contact Form interaction and send button hover style.
-4. Send button Animation effect ( using CSS and JS ).
+4. Send Button onlick animation(no JS) only CSS keyframes.
 
 Spa / Activities Page
 
@@ -46,7 +46,7 @@ Spa / Activities Page
 4. Waxing Services hover navigation and redirection for FAQ and Contact form.
 5. FAQ Dropdown hover style and dropdown content for Amenities In-rooms.
 6. Contact Form interaction and send button hover style.
-7. Send button Animation effect ( using CSS and JS ).
+7. Send Button onlick animation(no JS) only CSS keyframes.
 
 Packages Page
 
@@ -56,7 +56,7 @@ Packages Page
 4. Rental Rates Sports dropdown content.
 5. FAQ Dropdown hover style and dropdown content for Amenities In-rooms.
 6. Contact Form interaction and send button hover style.
-7. Send button Animation effect ( using CSS and JS ).
+7. Send Button onlick animation(no JS) only CSS keyframes.
 
 ## Installation
 
@@ -76,7 +76,7 @@ Open index.html in the browser of your choice.
 
 ## History
 
-April 2024
+April 12, 2024
 
 ## Credits
 
@@ -84,4 +84,4 @@ Sheldon Gohetia
 
 ## License
 
-MIT - please see [license file](LICENSE).
+MIT - See [license file](LICENSE).
