@@ -29,7 +29,7 @@ Room Style Page
 4. Masters Room button redirection to Masters Room Page.
 5. FAQ Dropdown hover style and dropdown content for Amenities In-rooms.
 6. Contact Form interaction and send button hover style.
-7. Send Button onlick to lighbox message content.
+7. Send Button onlick animation(no JS) only CSS keyframes.
 
 Masters Room Page
 

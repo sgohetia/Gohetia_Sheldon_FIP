@@ -507,14 +507,15 @@ ol {
 
 .lightbox {
   position: absolute;
-  border-top-left-radius: 29px;
-  border-top-right-radius: 29px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 25px;
   margin-top: 5px;
+  height: 138px;
   width: 412px;
   top: 0;
-  background-color: #effbed;
+  background-color: #9a2018;
   padding: 20px;
-  color: #042700;
+  color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -523,7 +524,7 @@ ol {
   position: absolute;
   top: 10px;
   right: 5%;
-  color: #46c152;
+  color: #fff;
   font-size: 36px;
   text-decoration: none;
   font-weight: bolder;
@@ -531,7 +532,7 @@ ol {
 }
 
 .lightbox_close:hover {
-  color: #ab0e02;
+  color: #6e0902;
 }
 
 .lightbox:target {
@@ -645,7 +646,17 @@ ol {
 .btn-active:active::after {
   content: "Coming Soon!";
 }
-
+.tickme {
+  display: flex;
+}
+#tickme[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+#tickme[type="checkbox"]:checked + span:after {
+  content: "❤️";
+  margin-left: 5px;
+}
 /* Spa/Activities PAGE CSS */
 
 #hero-spa {
@@ -846,7 +857,7 @@ ol {
   color: #9a2018;
 }
 
-/* Animated Send button for Masters Room/Spa/Packages */
+/* Animated Send button for Masters Room/Spa/Packages with JS */
 
 .container-btn {
   align-items: center;
@@ -1002,5 +1013,77 @@ ol {
   }
   100% {
     opacity: 0;
+  }
+}
+
+/* -- btn Room Style animation with no JS -- */
+
+.heart-btn {
+  display: flex;
+  width: 8em;
+  height: 2.5em;
+  position: relative;
+  font-size: 1.2em;
+}
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+.heart-btn button::before,
+.heart-btn button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #9a2018;
+  z-index: 0;
+  transition: 0.4s;
+}
+.heart-btn button::before {
+  left: 0;
+  border-radius: 2em 0 0 2em;
+}
+.heart-btn button::after {
+  right: 0;
+  border-radius: 0 2em 2em 0;
+}
+
+.heart-btn span {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#heart-btn[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+#heart-btn[type="checkbox"]:checked + button::before {
+  transform: rotate(45deg) translate(1em, -1.05em);
+  animation: glow 0.6s ease-in 0.4s forwards;
+}
+#heart-btn[type="checkbox"]:checked + button::after {
+  transform: rotate(-45deg) translate(-1em, -1.05em);
+  animation: glow 0.6s ease-in 0.4s forwards;
+}
+#heart-btn[type="checkbox"]:checked + button span {
+  opacity: 0;
+}
+@keyframes glow {
+  100% {
+    background: #ce1002;
   }
 }
